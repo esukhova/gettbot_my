@@ -1,0 +1,143 @@
+.exchanges {
+  padding: 64px 0 34px;
+  @include media-up(md) {
+    padding: 80px 0;
+  }
+
+  h3 {
+    @include media-up(md) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .owl-stage {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .owl-stage-outer {
+    overflow: visible;
+  }
+  
+  &__item {
+    position: relative;
+  }
+
+  i {
+    color: $color-text-secondary;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+
+    &:before {
+      transition: all 0.3s ease;
+    }
+
+    &:hover:before {
+      color: $color-text-primary;
+    }
+  }
+  
+  span.soon {
+    position: absolute;
+    top: -16px;
+    right: -25px;
+    font-family: $font;
+    color: $color-accent;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 34px;
+    //padding: 1.5px 6px 3.5px;
+    background: rgba(255, 255, 255, 0.52);
+    box-shadow: 0 2px 8px $color-box-shadow;
+    border-radius: 7px;
+    z-index: 100;
+    @include media-up(md) {
+      font-size: 12px;
+      //padding: 6px 12.5px;
+      line-height: 200%;
+      border-radius: 25px;
+      top: -24px;
+      right: -36px;
+      min-width: 50px;
+    }
+  }
+
+  ._icon-binance {
+    font-size: 24px;
+    @include media-up(md) {
+      font-size: 40px;
+    }
+  }
+
+  ._icon-okx {
+    font-size: 16.8px;
+    @include media-up(md) {
+      font-size: 28px;
+    }
+  }
+
+  ._icon-bybit {
+    font-size: 21.6px;
+    @include media-up(md) {
+      font-size: 36px;
+    }
+  }
+
+
+  ._icon-gate {
+    font-size: 21.6px;
+    @include media-up(md) {
+      font-size: 36px;
+    }
+  }
+
+  ._icon-htx {
+    font-size: 21.6px;
+    @include media-up(md) {
+      font-size: 36px;
+    }
+  }
+
+  ._icon-bitget {
+    font-size: 23px;
+    @include media-up(md) {
+      font-size: 39px;
+    }
+  }
+
+  svg {
+    position: relative;
+    fill: $color-text-secondary;
+    max-height: 24px;
+    transition: all 0.3s ease;
+    &.small {
+      max-height: 16.8px;
+    }
+    &.medium {
+      max-height: 21.6px;
+    }
+
+    &:hover {
+      fill: $color-text-primary;
+    }
+
+    @include media-up(md) {
+      max-height: 40px;
+      &.small {
+        max-height: 28px;
+      }
+      &.medium {
+        max-height: 36px;
+      }
+    }
+  }
+}
+
+

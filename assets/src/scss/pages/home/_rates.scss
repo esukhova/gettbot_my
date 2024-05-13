@@ -1,0 +1,323 @@
+.rates {
+  padding: 30px 0 34px;
+  @include media-up(md) {
+    padding: 80px 0;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+    @include media-up(sm) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__periods {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px 4px;
+    background: $color-bg-secondary;
+    border: 0.6px solid $color-border-secondary;
+    width: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    @include media-up(sm) {
+      gap: 0;
+    }
+  }
+
+  &__period {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    padding: 3px 7px;
+    flex-grow: 0;
+    border: 0.6px solid transparent;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    min-height: 25px;
+
+    &.active, &:hover, &:active, &:focus {
+      background: $color-white;
+      border: 0.6px solid $color-border-primary;
+      box-shadow: 0 2px 8px $color-box-shadow;
+    }
+
+    span.accent-cloud {
+      display: none;
+    }
+
+    &_bonus {
+      span.accent-cloud {
+        display: block;
+      }
+    }
+
+    @include media-up(sm) {
+      font-weight: 500;
+      font-size: 16px;
+      border-radius: 8px;
+      padding: 7px 17px;
+      min-height: 36px;
+    }
+
+    .accent-cloud {
+      font-size: 10px;
+      padding: 1px 5.5px;
+      @include media-up(sm) {
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    @include media-up(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    @include media-up(md) {
+      flex: 0 0 calc(50% - 10px);
+    }
+    @include media-up(lg) {
+      flex: 0 0 calc(25% - 15px);
+      min-height: 100%;
+    }
+  }
+}
+
+.rates-item {
+  background: $color-white;
+  box-shadow: 0 2px 8px $color-box-shadow;
+  border-radius: 12px;
+  padding: 20px 16px;
+  @include media-up(sm) {
+    border-radius: 16px;
+    padding: 20px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 26px;
+    @include media-up(md) {
+      flex-direction: column;
+      gap: 32px;
+      margin-bottom: 32px;
+      justify-content: space-between;
+    }
+  }
+
+  &__cost {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 0 0 59%;
+    @include media-up(md) {
+      order: 2;
+    }
+
+    p:first-child {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 114%;
+      letter-spacing: -0.04em;
+      display: flex;
+      gap: 8px;
+      @include media-up(sm) {
+        font-size: 52px;
+        line-height: 108%;
+      }
+
+      span {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+
+        &:before {
+          content: '$';
+        }
+      }
+
+      span.accent-cloud {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        user-select: none;
+        align-self: center;
+        transition: all 0.3s;
+        @include media-up(md) {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+    }
+
+    p:nth-child(2) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 133%;
+      letter-spacing: -0.02em;
+      color: $color-text-secondary;
+      @include media-up(sm) {
+        font-size: 16px;
+        line-height: 125%;
+      }
+    }
+  }
+
+    &__terms {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      @include media-up(md) {
+        flex-direction: row;
+        justify-content: space-between;
+        order: 1;
+      }
+
+      p:first-child {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        display: flex;
+        @include media-up(sm) {
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 114%;
+        }
+        @include media-up(md) {
+          gap: 4px;
+        }
+
+        span {
+          color: $color-accent;
+          display: none;
+
+          &.active {
+            display: flex;
+          }
+
+
+          &.plusbonus {
+            @include media-up(md) {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 1;
+              letter-spacing: -0.02em;
+              color: $color-accent;
+              justify-content: center;
+              align-items: center;
+              padding: 8px;
+              background: $color-bg-accent;
+              border: 1px solid $color-accent;
+              border-radius: 6px;
+              order: 3;
+              margin-left: 4px;
+            }
+          }
+
+          &.bots {
+            display: block;
+            margin-left: 4px;
+            color: $color-text-primary;
+            @include media-up(md) {
+              order: 2;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+
+      p:nth-child(2) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        background-color: $color-bg-secondary;
+        padding: 6px 12.5px;
+        border-radius: 12px;
+        color: $color-text-primary;
+        @include media-up(sm) {
+          font-size: 16px;
+          padding: 8px 16px;
+          border-radius: 16px;
+        }
+      }
+    }
+
+    .btn--azure {
+      width: 100%;
+      @include media-up(md) {
+        width: 98.5%;
+      }
+    }
+
+  }
+
+  .rates-item_pro.rates-item {
+    background-color: $color-accent;
+
+    p {
+      color: $color-white;
+    }
+
+    .accent-cloud {
+      color: $color-accent;
+    }
+
+    .btn--azure {
+      background-color: $color-white;
+      color: $color-accent;
+    }
+  }
+
+  .rates-item_pro .rates-item {
+    &__cost {
+      p:nth-child(2) {
+        color: $color-white;
+      }
+    }
+
+    &__terms {
+      color: $color-white;
+
+      p:first-child {
+        color: $color-white;
+
+        span {
+          color: $color-white;
+
+          &.plusbonus {
+            color: $color-white;
+            @include media-up(md) {
+              color: $color-accent;
+            }
+          }
+        }
+      }
+
+      p:nth-child(2) {
+        color: $color-text-primary;
+      }
+    }
+  }

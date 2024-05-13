@@ -1,0 +1,120 @@
+.marketplace {
+  padding: 40px 0 16px;
+
+  @include media-up(md) {
+    padding: 80px 0 43px;
+  }
+
+  &__video-bg {
+    overflow-x: hidden;
+    z-index: -100;
+    position: absolute;
+    padding-top: 60.5%;
+    height: calc(100% + 200px);;
+    width: 100%;
+    position: absolute;
+  }
+
+  &__video {
+    position: absolute;
+    top: 191px;
+    left: -41.5%;
+    width: 183%;
+    filter: hue-rotate(180deg);
+    transform: scale(1, -1);
+    @include media-up(lg) {
+      top: 180px;
+      width: 127%;
+      left: -13.5%;
+    }
+    @include media-up(xxxl) {
+      top: 100px;
+    }
+  }
+
+  &__container {
+    z-index: 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 13px;
+    @include media-up(sm) {
+      padding: 0 20px;
+    }
+  }
+
+  h1 {
+    max-width: 100%;
+    margin-bottom: 16px;
+
+    span {
+      display: block;
+    }
+
+    @include media-up(md) {
+      max-width: 480px;
+    }
+
+    @include media-up(lg) {
+      max-width: 832px;
+      margin-bottom: 24px;
+      span {
+        display: inline;
+      }
+    }
+
+  }
+
+  &__subtitle {
+    font-family: $font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #AAB0C0;
+    margin-bottom: 36px;
+
+    @include media-up(lg) {
+      font-size: 24px;
+      line-height: 133%;
+      letter-spacing: -0.02em;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &__btn {
+    margin-bottom: 52px;
+    @include media-up(lg) {
+      margin-bottom: 134px;
+    }
+  }
+
+  &__image {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.52);
+    box-sizing: border-box;
+    border: 0.27px solid $color-border-primary;
+    backdrop-filter: blur(8.7px);
+    border-radius: 4px;
+
+    @include media-up(lg) {
+      padding: 20px;
+      border: 1px solid $color-border-primary;
+      border-radius: 24px;
+      backdrop-filter: blur(32px);
+    }
+
+    img {
+      box-shadow: 0 0.440341px 2.64205px $color-box-shadow;
+      border-radius: 4px;
+
+      @include media-up(lg) {
+        box-shadow: 0 1.61932px 9.71592px $color-box-shadow;
+        border-radius: 12px;
+      }
+    }
+  }
+}

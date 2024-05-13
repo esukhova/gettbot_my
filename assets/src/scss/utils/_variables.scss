@@ -1,0 +1,39 @@
+// Media queries
+$grid-breakpoints:(xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1920px,
+);
+
+// Colors -не мои
+$color-main: #000000;
+$color-black: #161616;
+$color-white: #ffffff;
+$color-azure: #33e1cb;
+$color-gray-1: #939393;
+$color-gray-2: #d1d1d1;
+$color-gray-3: #cfcfcf;
+$color-gray-4: #999999;
+$color-gray-5: #c4c4c4;
+
+
+// Colors - мои
+
+$color-white: #ffffff;
+$color-text-primary: #0C0B16;
+$color-text-secondary: #AAB0C0;
+$color-text-tertiary: #828A9D;
+$color-bg-primary: #F9F9F9;
+$color-bg-secondary:#F4F4F4;
+$color-accent:#3FC7C8;
+$color-bg-accent:#D1F2F2;
+$color-bg-accent-secondary:#8DF1F2;
+$color-border-primary:#DFDFDF;
+$color-border-secondary: #E2E2E2;
+$color-box-shadow: rgba(15, 15, 15, 0.12);
+
+// Fonts
+$font: "SFProDisplay", -apple-system, system-ui, sans-serif;

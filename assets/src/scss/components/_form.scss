@@ -1,0 +1,56 @@
+.form {
+
+  &-row {
+    display: block;
+    margin-bottom: 1.5rem;
+
+    input {
+      border: 1px solid #c9c9c9;
+      font-size: 1rem;
+      border-radius: 5px;
+      padding: 0 1.25rem;
+      height: 4rem;
+    }
+
+    br {
+      display: none;
+    }
+
+    span.wpcf7-not-valid-tip {
+      margin-top: 0.25rem;
+    }
+  }
+
+  input.wpcf7-submit {
+    height: 3.5rem;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    color: $color-white;
+    background-color: $color-main;
+    cursor: pointer;
+    transition: opacity .25s;
+    border-radius: 5px;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+}
+
+.wpcf7-form {
+
+  &.submitting {
+
+    .wpcf7-spinner {
+      display: block;
+    }
+  }
+
+  .wpcf7-spinner {
+    display: none;
+  }
+
+  .wpcf7-response-output {
+    text-align: center;
+  }
+}

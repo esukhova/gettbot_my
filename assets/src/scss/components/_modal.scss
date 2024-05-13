@@ -1,0 +1,35 @@
+.modal {
+  padding: 2rem;
+  color: $color-main;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__form {
+    margin-bottom: 0.5rem;
+  }
+
+  &__notice {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+.modal {
+
+  &--sign-up {
+    width: 100%;
+    max-width: 35rem;
+  }
+}

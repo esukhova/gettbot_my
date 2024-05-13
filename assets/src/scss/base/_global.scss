@@ -1,0 +1,93 @@
+html {
+  font-family: $font;
+  font-size: max(16px, 1vw);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-family: $font;
+  line-height: 1;
+  color: $color-main;
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: var(--app-height);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: $color-bg-primary;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  color: $color-text-primary;
+  font-family: $font;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  @include media-up(sm) {
+    font-size: 42px;
+    line-height: 44px;
+    letter-spacing: -2px;
+  }
+  @include media-up(lg) {
+    font-size: 52px;
+    line-height: 56px;
+    letter-spacing: -2px;
+  }
+
+  span {
+    color: $color-accent;
+  }
+}
+
+h2 {
+  font-family: $font;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 114%;
+  letter-spacing: -0.04em;
+  color: #0C0B16;
+  text-align: left;
+  @include media-up(sm) {
+    font-size: 42px;
+    line-height: 108%;
+  }
+  @include media-up(md) {
+    font-size: 52px;
+    line-height: 108%;
+  }
+  span {
+    color: $color-accent;
+  }
+}
+
+h3 {
+  font-family: $font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: left;
+  letter-spacing: -0.01em;
+  color: $color-text-secondary;
+  @include media-up(sm) {
+    font-size: 20px;
+    letter-spacing: -0.02em;
+  }
+  @include media-up(md) {
+    font-size: 24px;
+    letter-spacing: -0.02em;
+  }
+}

@@ -1,0 +1,70 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 14px;
+  user-select: none;
+  text-align: center;
+  transition: all .25s;
+  border-radius: 17px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 9px;
+  align-self: center;
+
+  ._icon-arrow {
+    font-size: 10px;
+  }
+
+  &--azure {
+    padding: 11px 16.5px;
+    width: 90%;
+    background-color: $color-accent;
+    color: $color-white;
+    box-shadow: 0 2px 8px rgba(15, 15, 15, 0.12);
+    letter-spacing: -0.02em;
+    border-radius: 16px;
+    @include media-up(sm) {
+      width: 70%;
+      border-radius: 22px;
+      font-size: 16px;
+      padding: 14px 25.5px;
+    }
+    @include media-up(lg) {
+      width: auto;
+    }
+
+
+    &:hover {
+    }
+  }
+
+  &--azure--outline {
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    padding: 10px 17px;
+    border-radius: 16px;
+    background-color: $color-accent;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 0 4px rgba(244, 244, 244, 0.9), 0 0 0 5px $color-border-primary;
+
+    @include media-up(sm) {
+      padding: 11px 22px 13px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+      border-radius: 22px;
+      box-shadow: 0 0 0 7px rgba(244, 244, 244, 0.9), 0 0 0 8px $color-border-primary;
+    }
+    &:hover {
+    }
+  }
+
+  &--quote {
+    // background-image: url(@icons/quote.svg); // example of using bg icons
+  }
+}
+

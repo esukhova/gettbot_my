@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="developed" content="GetBot - your autopilot in the world of crypto-trading">
+
+    <link rel="stylesheet" href="assets/dist/css/styles.min.css">
+
+    <!-- Preloading fonts -->
+    <link rel="preload" href="assets/src/fonts/SFProDisplay/SFProDisplay-Light.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="assets/src/fonts/SFProDisplay/SFProDisplay-Regular.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="assets/src/fonts/SFProDisplay/SFProDisplay-Medium.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="assets/src/fonts/SFProDisplay/SFProDisplay-Semibold.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="assets/src/fonts/SFProDisplay/SFProDisplay-Bold.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" href="assets/src/fonts/Inter/Inter-Medium.woff2" as="font" type="font/woff2"
+          crossorigin="anonymous">
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="hamburger__inner">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header__logo">
+            <a href="#">
+                <img src="assets/src/images/icons/logo.png" alt="GetBot logo"/>
+            </a>
+        </div>
+        <div class="header-menu">
+            <nav class="header__nav nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link active">О компании</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Маркетплейс</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Тарифы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">FAQ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Реферальная программа</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-menu__buttons">
+                <a class="btn" href="#">EN</a>
+                <a class="btn" href="#">Войти</a>
+                <a class="btn btn--azure" href="#">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="marketplace">
+        <div class="marketplace__video-bg">
+            <video loop="" muted="" poster="assets/dist/images/video-poster.png" autoplay="" class="marketplace__video">
+                <source src="assets/dist/images/video.mp4" type="video/mp4">
+                <!--            <source src="video/plane.webm" type="video/webm">-->
+            </video>
+        </div>
+        <div class="container marketplace__container">
+            <h1 class="wow animate__fadeInDown">Маркетплейс торговых <span>smart-ботов</span> для криптотрейдинга</h1>
+            <p class="marketplace__subtitle wow animate__fadeInDown">Торгуйте как профи, не будучи им.</p>
+            <a class="marketplace__btn btn btn--azure--outline" href="#">
+                Маркетплейс &nbsp;&nbsp;&nbsp;&nbsp; <i class="_icon-arrow"></i>
+            </a>
+            <div class="marketplace__image">
+                <img src="assets/dist/images/marketplace.png" alt="Маркетплейс"></div>
+        </div>
+    </section>
+    <section class="exchanges">
+        <div class="container exchanges__container">
+            <h3>Доступные биржи</h3>
+            <div class="exchanges__items owl-carousel owl-carousel-exchanges">
+                <div class="exchanges__item">
+                    <a href="#"><i class="_icon-binance"></i></a>
+                    <span class="soon"></span>
+                </div>
+                <div class="exchanges__item">
+                    <a href="#"><i class="_icon-okx"></i></a>
+                    <span class="soon"></span>
+                </div>
+                <div class="exchanges__item">
+                    <a href="#"><i class="_icon-bybit soon"></i></a>
+                    <span class="soon">soon</span>
+                </div>
+                <div class="exchanges__item">
+                    <a href="#"><i class="_icon-gate soon"></i></a>
+                    <span class="soon">soon</span>
+                </div>
+                <div class="exchanges__item">
+                    <a href="#"><i class="_icon-htx soon"></i></a>
+                    <span class="soon">soon</span>
+                </div>
+                <div class="exchanges__item">
+                    <a href="#"><i class="_icon-bitget soon"></i></a>
+                    <span class="soon">soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="wow animate__fadeInDown">Как это работает</h2>
+            <div class="slider-how-it-works owl-carousel owl-carousel-hiw">
+                <div class="slider-how-it-works__item slider-hiw-item">
+                    <div class="slider-hiw-item__image">
+                        <img src="assets/dist/images/slider-hiw/slider-hiw-1.png" alt="Регистрация и подписка">
+                    </div>
+                    <div class="slider-hiw-item__info">
+                        <p>1&nbsp;шаг</p>
+                        <p>Зарегистрируйтесь и оформите подписку</p>
+                    </div>
+                </div>
+                <div class="slider-how-it-works__item slider-hiw-item">
+                    <div class="slider-hiw-item__image">
+                        <img src="assets/dist/images/slider-hiw/slider-hiw-2.png" alt="Выбор сета">
+                    </div>
+                    <div class="slider-hiw-item__info">
+                        <p class="slider-hiw-item__step"><span>2&nbsp;шаг</p>
+                        <p class="slider-hiw-item__text">Выберите подходящий сет</p>
+                    </div>
+                </div>
+                <div class="slider-how-it-works__item slider-hiw-item">
+                    <div class="slider-hiw-item__image">
+                        <img src="assets/dist/images/slider-hiw/slider-hiw-3.png" alt="Подключение биржи">
+                    </div>
+                    <div class="slider-hiw-item__info">
+                        <p class="slider-hiw-item__step">3 шаг</p>
+                        <p class="slider-hiw-item__text">Подключите<br>вашу биржу</p>
+                    </div>
+                </div>
+                <div class="slider-how-it-works__item slider-hiw-item">
+                    <div class="slider-hiw-item__image">
+                        <img src="assets/dist/images/slider-hiw/slider-hiw-4.png" alt="Определение депозита">
+                    </div>
+                    <div class="slider-hiw-item__info">
+                        <p class="slider-hiw-item__step">4&nbsp;шаг</p>
+                        <p class="slider-hiw-item__text">Определите депозит для торговли</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container advantages__container">
+            <div class="advantages__bg">
+                <svg width="1088" height="877" viewBox="0 0 1088 877" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_f_2002_1030)">
+                        <path d="M544 144L652.036 358.958L944 438.5L652.036 518.042L544 733L435.964 518.042L144 438.5L435.964 358.958L544 144Z"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_2002_1030" x="0" y="0" width="1088" height="877"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="72" result="effect1_foregroundBlur_2002_1030"/>
+                        </filter>
+                    </defs>
+                </svg>
+
+            </div>
+            <h2 class="wow animate__fadeInDown">Преимущества бота</h2>
+            <div class="advantages__items advantages-items">
+                <div class="advantages-items__item_main advantages-item advantages-item_main">
+                    <div class="advantages-item_main__image">
+                        <img src="assets/dist/images/advantages/advantages-1.png" alt="Платёж для старта">
+                    </div>
+                    <div class="advantages-item_main__info">
+                        <p class="advantages-item_main__title">Минимальный платёж для старта</p>
+                        <p class="advantages-item_main__text">от 12$/месяц без ограничений торговых операций</p>
+                    </div>
+                    <a href="#" class="btn btn--azure">Выбрать тариф &nbsp;&nbsp;&nbsp; <i class="_icon-arrow"></i></a>
+                </div>
+                <div class="advantages-items__item advantages-item">
+                    <div class="advantages-item__image">
+                        <img src="assets/dist/images/advantages/advantages-2.png" alt="Приватность информации">
+                    </div>
+                    <div class="advantages-item__info">
+                        <p class="advantages-item__title">Приватность информации</p>
+                        <p class="advantages-item__text">Вся информация шифруется и хранится в сети, защищенной
+                            протоколами</p>
+                    </div>
+                </div>
+                <div class="advantages-items__item advantages-item">
+                    <div class="advantages-item__image">
+                        <img src="assets/dist/images/advantages/advantages-3.png" alt="Решение для новичков">
+                    </div>
+                    <div class="advantages-item__info">
+                        <p class="advantages-item__title">Решение для новичков</p>
+                        <p class="advantages-item__text">Просто выберите сет, в зависимости от желаемой прибыли и он
+                            сделает все за вас</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="solution">
+        <div class="container solution__container">
+            <h2 class="wow animate__fadeInDown"><span>GettBot</span> — это комплексное решение для трейдинга</h2>
+            <div class="solution__items solution-items">
+                <div class="solution-items__solution-main solution-main">
+                    <div class="solution-main__info">
+                        <p class="solution-main__title">
+                            <span>Автоматическая торговля</span>
+                            <img src="assets/dist/images/icons/timer.svg" alt="Кружок">
+                        </p>
+                        <p class="solution-main__text">Бот будет торговать самостоятельно 24/7. Вам нужно просто
+                            настроить лимит для него и ждать прибыль</p>
+                    </div>
+                </div>
+                <div class="solution-items__solution-image solution-image">
+                    <img src="assets/dist/images/solution.png" alt="Автоматическая торговля">
+                </div>
+                <div class="solution-items__solution-paragraphs solution-paragraphs">
+                    <p>
+                        <span>Торговые стратегии</span>
+                        <img src="assets/dist/images/icons/diag-arrow.svg" alt="Стрелка">
+                    </p>
+                    <p>
+                        <span>Прозрачная отчётность</span>
+                        <img src="assets/dist/images/icons/diag-arrow.svg" alt="Стрелка">
+                    </p>
+                    <p>
+                        <span>Инструменты для безопасной торговли</span>
+                        <img src="assets/dist/images/icons/diag-arrow.svg" alt="Стрелка">
+                    </p>
+                    <p>
+                        <span>Криптобиржи в одном месте</span>
+                        <img src="assets/dist/images/icons/diag-arrow.svg" alt="Стрелка">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rates">
+        <div class="container rates__container">
+            <h2 class="wow animate__fadeInDown">Тарифы</h2>
+            <div class="rates__periods">
+                <div class="rates__period" data-tab=".one-month">
+                    <span>1 месяц</span>
+                    <span class="accent-cloud">bonus</span>
+                </div>
+                <div class="rates__period" data-tab=".six-month">
+                    <span>6 месяцев</span>
+                    <span class="accent-cloud">bonus</span>
+                </div>
+                <div class="rates__period rates__period_bonus active" data-tab=".year">
+                    <span>1 год</span>
+                    <span class="accent-cloud">bonus</span>
+                </div>
+            </div>
+            <div class="rates__items">
+                <div class="rates__item rates-item">
+                    <div class="rates-item__content">
+                        <div class="rates-item__cost">
+                            <p>
+                                <span class="one-month">1</span>
+                                <span class="six-month">6</span>
+                                <span class="year active">12</span>
+                                <span class="accent-cloud">15% off</span>
+                            </p>
+                            <p>Per month, billed annually</p>
+                        </div>
+                        <div class="rates-item__terms">
+                            <p>
+                                <span class="one-month">1</span>
+                                <span class="six-month">2</span>
+                                <span class="year active">3</span>
+                                <span class="one-month plusbonus">+0</span>
+                                <span class="six-month plusbonus">+0</span>
+                                <span class="year plusbonus active">+1</span>
+                                <span class="bots">bots</span>
+                            </p>
+                            <p>Start</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn--azure">Выбрать тариф</a>
+                </div>
+                <div class="rates__item rates-item">
+                    <div class="rates-item__content">
+                        <div class="rates-item__cost">
+                            <p>
+                                <span class="one-month">1</span>
+                                <span class="six-month">6</span>
+                                <span class="year active">12</span>
+                                <span class="accent-cloud">15% off</span>
+                            </p>
+                            <p>Per month, billed annually</p>
+                        </div>
+                        <div class="rates-item__terms">
+                            <p>
+                                <span class="one-month">1</span>
+                                <span class="six-month">2</span>
+                                <span class="year active">3</span>
+                                <span class="one-month plusbonus">+0</span>
+                                <span class="six-month plusbonus">+0</span>
+                                <span class="year plusbonus active">+1</span>
+                                <span class="bots">bots</span>
+                            </p>
+                            <p>Start</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn--azure">Выбрать тариф</a>
+                </div>
+                <div class="rates__item rates-item">
+                    <div class="rates-item__content">
+                        <div class="rates-item__cost">
+                            <p>
+                                <span class="one-month">1</span>
+                                <span class="six-month">6</span>
+                                <span class="year active">12</span>
+                                <span class="accent-cloud">15% off</span>
+                            </p>
+                            <p>Per month, billed annually</p>
+                        </div>
+                        <div class="rates-item__terms">
+                            <p>
+                                <span class="one-month">1</span>
+                                <span class="six-month">2</span>
+                                <span class="year active">3</span>
+                                <span class="one-month plusbonus">+0</span>
+                                <span class="six-month plusbonus">+0</span>
+                                <span class="year plusbonus active">+1</span>
+                                <span class="bots">bots</span>
+                            </p>
+                            <p>Start</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn--azure">Выбрать тариф</a>
+                </div>
+                <div class="rates__item rates-item rates-item_pro">
+                    <div class="rates-item__content">
+                        <div class="rates-item__cost">
+                            <p>
+                                <span class="one-month">1</span>
+                                <span class="six-month">6</span>
+                                <span class="year active">12</span>
+                                <span class="accent-cloud">15% off</span>
+                            </p>
+                            <p>Per month, billed annually</p>
+                        </div>
+                        <div class="rates-item__terms">
+                            <p>
+                                <span class="one-month">1</span>
+                                <span class="six-month">2</span>
+                                <span class="year active">3</span>
+                                <span class="one-month plusbonus">+0</span>
+                                <span class="six-month plusbonus">+0</span>
+                                <span class="year plusbonus active">+1</span>
+                                <span class="bots">bots</span>
+                            </p>
+                            <p>Start</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn--azure">Выбрать тариф</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="written-about-us">
+        <div class="container written-about-us__container">
+            <h2 class="wow animate__fadeInDown">О нас пишут</h2>
+            <div class="slider-written-about-us owl-carousel owl-carousel-waa">
+                <div class="slider-written-about-us__item slider-waa-item">
+                    <div class="slider-waa-item__icon">
+                        <img src="assets/dist/images/slider-waa/slider-waa-1.png" alt="РБК">
+                    </div>
+                    <div class="slider-waa-item__text text">
+                        <p>Платформа очень простая, справится даже тот, кто ничего не знает о криптовалюте. Открытие для
+                            любителей изучать новое и инвестировать капитал</p>
+                    </div>
+                    <div class="slider-waa-item__read">
+                        <span>Читать полностью &nbsp;&nbsp; <i class="_icon-arrow"></i></span>
+                    </div>
+                </div>
+                <div class="slider-written-about-us__item slider-waa-item">
+                    <div class="slider-waa-item__icon">
+                        <img src="assets/dist/images/slider-waa/slider-waa-1.png" alt="РБК">
+                    </div>
+                    <div class="slider-waa-item__text text">
+                        <p>Платформа очень простая, справится даже тот, кто ничего не знает о криптовалюте. Открытие для
+                            любителей изучать новое и инвестировать капитал</p>
+                    </div>
+                    <div class="slider-waa-item__read">
+                        <span>Читать полностью &nbsp;&nbsp; <i class="_icon-arrow"></i></span>
+                    </div>
+                </div>
+                <div class="slider-written-about-us__item slider-waa-item">
+                    <div class="slider-waa-item__icon">
+                        <img src="assets/dist/images/slider-waa/slider-waa-1.png" alt="РБК">
+                    </div>
+                    <div class="slider-waa-item__text text">
+                        <p>Платформа очень простая, справится даже тот, кто ничего не знает о криптовалюте. Открытие для
+                            любителей изучать новое и инвестировать капитал</p>
+                    </div>
+                    <div class="slider-waa-item__read">
+                        <span>Читать полностью &nbsp;&nbsp; <i class="_icon-arrow"></i></span>
+                    </div>
+                </div>
+                <div class="slider-written-about-us__item slider-waa-item">
+                    <div class="slider-waa-item__icon">
+                        <img src="assets/dist/images/slider-waa/slider-waa-1.png" alt="РБК">
+                    </div>
+                    <div class="slider-waa-item__text text">
+                        <p>Платформа очень простая, справится даже тот, кто ничего не знает о криптовалюте. Открытие для
+                            любителей изучать новое и инвестировать капитал</p>
+                    </div>
+                    <div class="slider-waa-item__read">
+                        <span>Читать полностью &nbsp;&nbsp; <i class="_icon-arrow"></i></span>
+                    </div>
+                </div>
+                <div class="slider-written-about-us__item slider-waa-item">
+                    <div class="slider-waa-item__icon">
+                        <img src="assets/dist/images/slider-waa/slider-waa-1.png" alt="РБК">
+                    </div>
+                    <div class="slider-waa-item__text text">
+                        <p>Платформа очень простая, справится даже тот, кто ничего не знает о криптовалюте. Открытие для
+                            любителей изучать новое и инвестировать капитал</p>
+                    </div>
+                    <div class="slider-waa-item__read">
+                        <span>Читать полностью &nbsp;&nbsp; <i class="_icon-arrow"></i></span>
+                    </div>
+                </div>
+                <div class="slider-written-about-us__item slider-waa-item">
+                    <div class="slider-waa-item__icon">
+                        <img src="assets/dist/images/slider-waa/slider-waa-1.png" alt="РБК">
+                    </div>
+                    <div class="slider-waa-item__text text">
+                        <p>Платформа очень простая, справится даже тот, кто ничего не знает о криптовалюте. Открытие для
+                            любителей изучать новое и инвестировать капитал</p>
+                    </div>
+                    <div class="slider-waa-item__read">
+                        <span>Читать полностью &nbsp;&nbsp; <i class="_icon-arrow"></i></span>
+                    </div>
+                </div>
+                <div class="slider-written-about-us__item slider-waa-item">
+                    <div class="slider-waa-item__icon">
+                        <img src="assets/dist/images/slider-waa/slider-waa-1.png" alt="РБК">
+                    </div>
+                    <div class="slider-waa-item__text text">
+                        <p>Платформа очень простая, справится даже тот, кто ничего не знает о криптовалюте. Открытие для
+                            любителей изучать новое и инвестировать капитал для увеличения прибыли</p>
+                    </div>
+                    <div class="slider-waa-item__read">
+                        <span>Читать полностью &nbsp;&nbsp; <i class="_icon-arrow"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="answers">
+        <div class="container answers__container">
+            <div class="answers__bg">
+                <svg width="1088" height="877" viewBox="0 0 1088 877" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_f_2002_1030)">
+                        <path d="M544 144L652.036 358.958L944 438.5L652.036 518.042L544 733L435.964 518.042L144 438.5L435.964 358.958L544 144Z"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_2002_1030" x="0" y="0" width="1088" height="877"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="72" result="effect1_foregroundBlur_2002_1030"/>
+                        </filter>
+                    </defs>
+                </svg>
+
+            </div>
+            <div class="answers__wrapper">
+                <div class="answers__main">
+                    <h2 class="wow animate__fadeInDown">Ответы на частые вопросы</h2>
+                    <p class="answers__sublitle text">Если не нашли ответ на интересующий вопрос, напишите в службу
+                        поддержки.</p>
+                    <a class="btn btn--azure" href="#">Посмотреть все вопросы</a>
+                </div>
+                <div class="answers__accordion">
+                    <h4 class="text">Могу ли я купить больше 30 ботов?<i class="_icon-arrow"></i></h4>
+                    <div>
+                        <p>Зарегистрируйтесь на одной из бирж: Binance или OKX. После чего скопируйте скопируйте ссылку
+                            в личный кабинет.</p>
+                    </div>
+                    <h4 class="text">У меня нет биржи, как ее подключить?<i class="_icon-arrow"></i></h4>
+                    <div>
+                        <p>Зарегистрируйтесь на одной из бирж: Binance или OKX. После чего скопируйте скопируйте ссылку
+                            в личный кабинет.</p>
+                    </div>
+                    <h4 class="text">Могу я стать партнером компании?<i class="_icon-arrow"></i></h4>
+                    <div>
+                        <p>Зарегистрируйтесь на одной из бирж: Binance или OKX. После чего скопируйте скопируйте ссылку
+                            в личный кабинет.</p>
+                    </div>
+                    <h4 class="text">Как мне рассчитать экономию?<i class="_icon-arrow"></i></h4>
+                    <div>
+                        <p>Зарегистрируйтесь на одной из бирж: Binance или OKX. После чего скопируйте скопируйте ссылку
+                            в личный кабинет.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__first wow animate__fadeInLeft">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="assets/src/images/icons/logo.png" alt="GetBot logo"/>
+                        </a>
+                    </div>
+                    <div class="footer__socials socials">
+                        <a class="socials__item" href="#"><i class="_icon-x"></i></a>
+                        <a class="socials__item" href="#"><i class="_icon-fb"></i></a>
+                        <a class="socials__item" href="#"> <i class="_icon-ig"></i></a>
+                        <a class="socials__item" href="#"><i class="_icon-tg"></i></a>
+                        <a class="socials__item" href="#"><i class="_icon-discord"></i></a>
+                        <a class="socials__item" href="#"><i class="_icon-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__contacts contacts">
+                    <div class="contacts__mail">
+                        <i class="_icon-mail"></i>
+                        <a href="mailto:info@gettbot.io">info@gettbot.io</a>
+                    </div>
+                    <div class="contacts__address">IFZA Business Park, Building A2, Dubai Silicon Oasis, DDP, Dubai,
+                        United Arab Emirates
+                    </div>
+                </div>
+                <div class="footer__btn-wrapper wow animate__fadeInRight">
+                    <a class="footer__btn btn btn--azure--outline" href="#">
+                        Маркетплейс &nbsp;&nbsp;&nbsp;&nbsp; <i class="_icon-arrow"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__trade wow animate__fadeInUp">
+                <img src="assets/dist/images/Trade.png" alt="Trade smarter, not harder">
+            </div>
+            <div class="footer__docs">
+                <a href="#" class="footer__docs-item">Протоколы безопасности</a>
+                <a href="#" class="footer__docs-item">Политика конфиденциальности</a>
+                <a href="#" class="footer__docs-item">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+</main>
+<script type="module" src="assets/dist/js/libs/jquery.min.js"></script>
+<script type="module" src="assets/dist/js/libs/jquery-ui.min.js"></script>
+<script type="module" src="assets/dist/js/libs/owl.carousel.min.js"></script>
+<script src="assets/dist/js/libs/wow.min.js"></script>
+<script type="module" src="assets/dist/js/index.min.js"></script>
+</body>
+</html>

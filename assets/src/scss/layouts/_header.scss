@@ -1,0 +1,50 @@
+.header {
+  border-bottom: 0.5px solid $color-border-primary;
+  position: relative;
+  @include media-up(lg) {
+    padding: 4px 0;
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    display: block;
+    @include media-up(lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    flex-grow: 1;
+    .show-nav & {
+      top: 7px;
+    }
+    @include media-up(lg) {
+      margin-bottom: 0;
+      position: relative;
+      top:0;
+      left: 0;
+    }
+
+    img {
+      width: 132px;
+      @include media-up(lg) {
+        width: 180px;
+      }
+    }
+  }
+
+  &__nav {
+    @include media-up(lg) {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}
