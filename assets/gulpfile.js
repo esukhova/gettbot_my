@@ -86,7 +86,6 @@ gulp.task('staticData', gulp.series('images', 'fonts'));
 gulp.task('srcData', gulp.series('css', 'js', 'html'));
 
 gulp.task('default', gulp.series('images', 'fonts', 'font_icons', 'css', 'html', 'js', 'library1', 'library2', 'library3', 'library4', 'watch'));
-// gulp.task('srcData', gulp.series('css', 'js', 'html', 'library'));
 
 // gulp.task('deploy', function () {
 //     return gulp.src('./dist/**/*')

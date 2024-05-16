@@ -184,9 +184,13 @@
     font-size: 12px;
     line-height: 133%;
     letter-spacing: -0.02em;
-    @include media-up(lg) {
+    flex-grow: 1;
+    text-align: center;
+    @include media-up(md) {
       font-size: 16px;
       line-height: 125%;
+      text-align: inherit;
+      flex-grow: 0;
     }
   }
 }

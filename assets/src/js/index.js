@@ -1,8 +1,37 @@
 window.addEventListener("DOMContentLoaded", () => {
-    // routes.loadEvents();
-    // components.init();
-    // pages.init();
 
+    //Для меню
+    const menuLinks = document.querySelectorAll('.menu__link');
+
+    menuLinks.forEach(onLinkClick);
+
+    function onLinkClick(item) {
+        item.addEventListener('click', function () {
+            let currentLink = item;
+
+            if (!currentLink.classList.contains('active')) {
+                menuLinks.forEach(function (item) {
+                    item.classList.remove('active');
+                })
+                currentLink.classList.add('active');
+            }
+        });
+    }
+
+
+
+
+    //Для hamburger-menu
+    const body = document.documentElement;
+    const navBtn = document.querySelector('.hamburger');
+    const menuClass = 'show-nav';
+
+    navBtn && navBtn.addEventListener('click', () => {
+        body.classList.toggle(menuClass);
+    });
+
+
+   //Для обрезки текста статей в разделе "О нас пишут"
     $(function () {
         (function cropArticle() {
             $(".slider-waa-item__text").each(function () {
@@ -15,12 +44,16 @@ window.addEventListener("DOMContentLoaded", () => {
         })();
     });
 
+
+    //Подключение аккордеона
     $(function () {
         $(".answers__accordion").accordion({
             collapsible: true
         });
     });
 
+
+    //Подключение owl-каруселей
     $('.owl-carousel-hiw, .owl-carousel-waa').owlCarousel({
         loop: false,
         autoWidth: true,
@@ -60,6 +93,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }).init();
 
 
+    //Табы для раздела "Тарифы"
     const ratesTabs = document.querySelectorAll('.rates__period');
     const ratesTabsItems = document.querySelectorAll('.one-month, .six-month, .year');
 
@@ -86,20 +120,14 @@ window.addEventListener("DOMContentLoaded", () => {
             }
 
             if (currentRate.classList.contains('rates__period_bonus')) {
-                document.querySelectorAll(tabClass + '~.accent-cloud')[0].style = "visibility = visible; opacity: 1";
+                document.querySelectorAll(tabClass + '~.accent-cloud').forEach(function (item) {
+                    item.style = "visibility = visible; opacity: 1";
+                });
             } else {
-                document.querySelectorAll(tabClass + '~.accent-cloud')[0].style = "visibility = hidden; opacity: 0";
+                document.querySelectorAll(tabClass + '~.accent-cloud').forEach(function (item) {
+                    item.style = "visibility = hidden; opacity: 0";
+                });
             }
         })
     }
-
-
-    //Для hamburger-menu
-    const body = document.documentElement;
-    const navBtn = document.querySelector('.hamburger');
-    const menuClass = 'show-nav';
-
-    navBtn && navBtn.addEventListener('click', () => {
-        body.classList.toggle(menuClass);
-    });
 })
