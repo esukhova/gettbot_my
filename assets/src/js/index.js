@@ -19,8 +19,6 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
 
-
-
     //Для hamburger-menu
     const body = document.documentElement;
     const navBtn = document.querySelector('.hamburger');
@@ -31,7 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
 
-   //Для обрезки текста статей в разделе "О нас пишут"
+//Для обрезки текста статей в разделе "О нас пишут"
     $(function () {
         (function cropArticle() {
             $(".slider-waa-item__text").each(function () {
@@ -42,6 +40,28 @@ window.addEventListener("DOMContentLoaded", () => {
                 }
             });
         })();
+    });
+
+    const readMoreLinks = document.querySelectorAll('.slider-waa-item__read');
+    readMoreLinks.forEach((item) => {
+        let articleWrapper = item.parentElement;
+        let article = item.previousElementSibling;
+        let articleCropped = article.getElementsByTagName('p')[0];
+        let articleFull = article.getElementsByTagName('div')[0];
+
+        item.addEventListener('click', () => {
+            articleFull.classList.toggle('hidden');
+            articleCropped.classList.toggle('hidden');
+
+            if (!articleWrapper.classList.contains('opened')) {
+                item.innerHTML = '<span>Закрыть &nbsp;&nbsp; <i class="_icon-arrow"></i></span>';
+                articleWrapper.classList.add('opened');
+
+            } else {
+                item.innerHTML = '<span>Читать полностью &nbsp;&nbsp; <i class="_icon-arrow"></i></span>';
+                articleWrapper.classList.remove('opened');
+            }
+        });
     });
 
 
@@ -92,6 +112,15 @@ window.addEventListener("DOMContentLoaded", () => {
         animateClass: 'animate__animated',
     }).init();
 
+    let solutionItems = document.querySelectorAll('.solution-item');
+    solutionItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            solutionItems.forEach((item) => {
+                item.classList.remove('active');
+            });
+            item.classList.toggle('active');
+        });
+    });
 
     //Табы для раздела "Тарифы"
     const ratesTabs = document.querySelectorAll('.rates__period');

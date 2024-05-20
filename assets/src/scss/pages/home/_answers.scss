@@ -94,7 +94,7 @@
     padding: 16px 19px 16px 16px;
     box-shadow: 0 2px 8px $color-box-shadow;
     border: none;
-    margin-bottom: 8px;
+    margin-top: 8px;
     position: relative;
     font-family: $font;
     font-weight: 500;
@@ -105,7 +105,7 @@
     transition: border-radius 0.5s, margin-bottom 0.9s 0.3s, padding 0.3s;
 
     @include media-up(md) {
-      margin-bottom: 12px;
+      margin-top: 12px;
       padding: 24px 32px;
       border-radius: 16px;
       font-size: 20px;
@@ -113,11 +113,15 @@
     }
   }
 
+  .ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-icons:first-child {
+    margin-top: 0;
+  }
+
   .ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-icons.ui-accordion-header-active.ui-state-active {
     box-shadow: 0 8px 0 white, 0 -2px 8px $color-box-shadow;
     border-radius: 8px 8px 0 0;
     margin-bottom: 0;
-    transition: border-radius 0.7s;
+    transition: border-radius 0.7s, margin-bottom 0.9s 0.3s, padding 0.3s;
     @include media-up(md) {
       border-radius: 16px 16px 0 0;
       padding: 24px 32px 16px;
@@ -136,19 +140,17 @@
     box-shadow: 0 -8px 0 white, 0 2px 8px $color-box-shadow;
     border-radius: 0 0 8px 8px;
     border: none;
-    margin-bottom: 8px;
-    margin-top: 0;
+    margin-bottom: 0;
     font-family: $font;
     font-weight: 400;
     font-size: 14px;
     line-height: 143%;
     letter-spacing: -0.02em;
-    padding: 0 16px 24px;
+    padding: 8px 16px 24px;
     z-index: 2;
     position: relative;
     @include media-up(md) {
-      margin-bottom: 12px;
-      padding: 0 32px 24px;
+      padding: 12px 32px 24px;
       font-size: 20px;
       line-height: 140%;
       border-radius:16px;
